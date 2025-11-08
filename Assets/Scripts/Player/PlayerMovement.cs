@@ -34,14 +34,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float wallJumpInputLockDuration = 0.2f;
     [SerializeField] private AnimationCurve wallJumpAccelRebuildCurve = AnimationCurve.Linear(0, 0, 1, 1);
 
-    [Header("Corner Correction")]
-    [SerializeField] private bool enableCornerCorrection = true;
-    [SerializeField] private float cornerDetectorHorizontalOffset = 0.5f;
-    [SerializeField] private float cornerDetectorVerticalOffset = 1f;
-    [SerializeField] private float cornerRaycastSeparation = 0.1f;
-    [SerializeField] private float cornerRaycastLength = 0.5f;
-    [SerializeField] private float cornerNudgeAmount = 0.1f;
-
     [Header("Dash Stats")]
     [SerializeField] private float dashSpeed = 20f;
     [SerializeField] private float dashDuration = 0.2f;
@@ -97,7 +89,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        HandleCornerCorrection();
         IsGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
         if (IsGrounded)
         {
@@ -232,38 +223,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void HandleCornerCorrection()
-    {
-        if (!enableCornerCorrection || rb.linearVelocity.y <= 0) return;
-
-        Vector2 currentPos = (Vector2)transform.position;
-
-        // Left corner check
-        Vector2 leftGroupCenter = currentPos + new Vector2(-cornerDetectorHorizontalOffset, cornerDetectorVerticalOffset);
-        Vector2 leftOuterOrigin = leftGroupCenter - new Vector2(cornerRaycastSeparation / 2, 0);
-        Vector2 leftInnerOrigin = leftGroupCenter + new Vector2(cornerRaycastSeparation / 2, 0);
-        RaycastHit2D leftOuterHit = Physics2D.Raycast(leftOuterOrigin, Vector2.up, cornerRaycastLength, groundLayer);
-        RaycastHit2D leftInnerHit = Physics2D.Raycast(leftInnerOrigin, Vector2.up, cornerRaycastLength, groundLayer);
-
-        if (leftOuterHit.collider != null && leftInnerHit.collider == null)
-        { 
-            transform.position = currentPos + new Vector2(cornerNudgeAmount, 0);
-            return; // Only correct one side per frame
-        }
-
-        // Right corner check
-        Vector2 rightGroupCenter = currentPos + new Vector2(cornerDetectorHorizontalOffset, cornerDetectorVerticalOffset);
-        Vector2 rightOuterOrigin = rightGroupCenter + new Vector2(cornerRaycastSeparation / 2, 0);
-        Vector2 rightInnerOrigin = rightGroupCenter - new Vector2(cornerRaycastSeparation / 2, 0);
-        RaycastHit2D rightOuterHit = Physics2D.Raycast(rightOuterOrigin, Vector2.up, cornerRaycastLength, groundLayer);
-        RaycastHit2D rightInnerHit = Physics2D.Raycast(rightInnerOrigin, Vector2.up, cornerRaycastLength, groundLayer);
-
-        if (rightOuterHit.collider != null && rightInnerHit.collider == null)
-        {
-            transform.position = currentPos - new Vector2(cornerNudgeAmount, 0);
-        }
-    }
-
     private void HandleGravity()
     {
         if (IsWallSliding && rb.linearVelocity.y < 0)
@@ -332,25 +291,5 @@ public class PlayerMovement : MonoBehaviour
         // Left
         Vector2 leftCheckPos = basePos + new Vector2(-wallCheckOffset.x, wallCheckOffset.y);
         Gizmos.DrawWireSphere(leftCheckPos, wallCheckSphereRadius);
-
-        // Draw Corner Correction Rays
-        if (enableCornerCorrection)
-        {
-            Gizmos.color = Color.red;
-
-            // Left Group
-            Vector2 leftGroupCenter = basePos + new Vector2(-cornerDetectorHorizontalOffset, cornerDetectorVerticalOffset);
-            Vector2 leftOuterOrigin = leftGroupCenter - new Vector2(cornerRaycastSeparation / 2, 0);
-            Vector2 leftInnerOrigin = leftGroupCenter + new Vector2(cornerRaycastSeparation / 2, 0);
-            Gizmos.DrawLine(leftOuterOrigin, leftOuterOrigin + Vector2.up * cornerRaycastLength);
-            Gizmos.DrawLine(leftInnerOrigin, leftInnerOrigin + Vector2.up * cornerRaycastLength);
-
-            // Right Group
-            Vector2 rightGroupCenter = basePos + new Vector2(cornerDetectorHorizontalOffset, cornerDetectorVerticalOffset);
-            Vector2 rightOuterOrigin = rightGroupCenter + new Vector2(cornerRaycastSeparation / 2, 0);
-            Vector2 rightInnerOrigin = rightGroupCenter - new Vector2(cornerRaycastSeparation / 2, 0);
-            Gizmos.DrawLine(rightOuterOrigin, rightOuterOrigin + Vector2.up * cornerRaycastLength);
-            Gizmos.DrawLine(rightInnerOrigin, rightInnerOrigin + Vector2.up * cornerRaycastLength);
-        }
     }
 }

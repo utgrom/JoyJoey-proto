@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 78157723071150087}
   - component: {fileID: 2030686611581950111}
   - component: {fileID: 4312068454649813777}
+  - component: {fileID: 2493448905270914501}
   - component: {fileID: 1587171205294302771}
   - component: {fileID: 8480685373916213803}
   - component: {fileID: 2060615398544281943}
@@ -202,6 +203,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &2493448905270914501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3572484019288003470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7f296253b06be246b6c46301c97ee7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  solid:
+    serializedVersion: 2
+    m_Bits: 8
+  rayLen: 0.45
+  redOffsetL: {x: -0.15, y: 0}
+  yellowOffsetL: {x: -0.3, y: 0}
+  redOffsetR: {x: 0.15, y: 0}
+  yellowOffsetR: {x: 0.3, y: 0}
+  displacement: {x: 0.16, y: 0}
+  correctionEnabled: 1
 --- !u!114 &1587171205294302771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,6 +252,7 @@ MonoBehaviour:
   wallSlideUpwardForce: -5
   wallJumpXForce: 20
   wallJumpYForce: 10
+  wallJumpCutFactor: 5
   wallJumpCoyoteTime: 0.1
   wallJumpBufferTime: 0.1
   wallJumpInputLockDuration: 0.25

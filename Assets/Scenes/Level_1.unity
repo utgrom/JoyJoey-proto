@@ -381,8 +381,8 @@ Transform:
   m_GameObject: {fileID: 97092653}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.58, y: 0.3, z: 0}
-  m_LocalScale: {x: 2.6222062, y: 6.7166, z: 1}
+  m_LocalPosition: {x: 4.4966, y: 0.5049, z: 0}
+  m_LocalScale: {x: 2.9930646, y: 6.989745, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1460,8 +1460,8 @@ Transform:
   m_GameObject: {fileID: 459701451}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.864555, y: 8.191404, z: 0}
-  m_LocalScale: {x: 5.4220877, y: 30.216665, z: 1}
+  m_LocalPosition: {x: -16.8349, y: 8.191404, z: 0}
+  m_LocalScale: {x: 5.481824, y: 30.216665, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1599,8 +1599,8 @@ Transform:
   m_GameObject: {fileID: 481768517}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.239908, y: 7.1225677, z: 0}
-  m_LocalScale: {x: 2.453321, y: 1.1471952, z: 1}
+  m_LocalPosition: {x: 7.835297, y: 7.5025, z: 0}
+  m_LocalScale: {x: 1.6697688, y: 0.9943888, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2333,8 +2333,8 @@ Transform:
   m_GameObject: {fileID: 1045853950}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.468577, y: 8.299999, z: 0}
-  m_LocalScale: {x: 5.5993896, y: 17.516418, z: 1}
+  m_LocalPosition: {x: 11.468577, y: 8.0331, z: 0}
+  m_LocalScale: {x: 5.5993896, y: 18.05067, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2703,8 +2703,8 @@ Transform:
   m_GameObject: {fileID: 1504430515}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.6979227, y: 16.746368, z: 0}
-  m_LocalScale: {x: 10.053218, y: 1.1471952, z: 1}
+  m_LocalPosition: {x: 4.170178, y: 16.746368, z: 0}
+  m_LocalScale: {x: 8.997732, y: 1.1471952, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2876,8 +2876,8 @@ Transform:
   m_GameObject: {fileID: 1806018307}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.104714, y: 8.948182, z: 0}
-  m_LocalScale: {x: 12.353077, y: 1.1471952, z: 1}
+  m_LocalPosition: {x: -8.0512, y: 8.948182, z: 0}
+  m_LocalScale: {x: 12.099967, y: 1.1471952, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3010,8 +3010,8 @@ Transform:
   m_GameObject: {fileID: 1824791957}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.915747, y: 10.495195, z: 0}
-  m_LocalScale: {x: 29.041796, y: 12.238722, z: 1}
+  m_LocalPosition: {x: 28.852617, y: 10.717064, z: 0}
+  m_LocalScale: {x: 29.169054, y: 12.682462, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3411,34 +3411,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1587171205294302771, guid: cf71ea7022cea5448adeb72daf57209f, type: 3}
-      propertyPath: cornerNudgeAmount
-      value: 0.13
-      objectReference: {fileID: 0}
-    - target: {fileID: 1587171205294302771, guid: cf71ea7022cea5448adeb72daf57209f, type: 3}
-      propertyPath: wallJumpCutFactor
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1587171205294302771, guid: cf71ea7022cea5448adeb72daf57209f, type: 3}
-      propertyPath: cornerRaycastLength
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1587171205294302771, guid: cf71ea7022cea5448adeb72daf57209f, type: 3}
-      propertyPath: cornerRaycastOffset.y
-      value: 0.99
-      objectReference: {fileID: 0}
-    - target: {fileID: 1587171205294302771, guid: cf71ea7022cea5448adeb72daf57209f, type: 3}
-      propertyPath: cornerRaycastSeparation
-      value: 0.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1587171205294302771, guid: cf71ea7022cea5448adeb72daf57209f, type: 3}
-      propertyPath: cornerDetectorVerticalOffset
-      value: 0.99
-      objectReference: {fileID: 0}
-    - target: {fileID: 1587171205294302771, guid: cf71ea7022cea5448adeb72daf57209f, type: 3}
-      propertyPath: cornerDetectorHorizontalOffset
-      value: 0.239
-      objectReference: {fileID: 0}
     - target: {fileID: 3572484019288003470, guid: cf71ea7022cea5448adeb72daf57209f, type: 3}
       propertyPath: m_Name
       value: Player
