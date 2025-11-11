@@ -5,6 +5,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("Components")]
     private Rigidbody2D rb;
+    [SerializeField] private Transform spriteTransform;
 
     [Header("Movement Stats")]
     [SerializeField] private float maxMoveSpeed = 10f;
@@ -61,6 +62,7 @@ public class PlayerMovement : MonoBehaviour
     private float wallJumpInputLockTimer;
     private float currentAcceleration;
     private bool isJumpingFromWall = false;
+    private bool isFacingRight = true;
 
     private void Awake()
     {
@@ -186,12 +188,28 @@ public class PlayerMovement : MonoBehaviour
     {
         if (IsDashing) return;
 
+        // Flip direction
+        if (horizontalInput > 0 && !isFacingRight)
+        {
+            Flip();
+        }
+        else if (horizontalInput < 0 && isFacingRight)
+        {
+            Flip();
+        }
+
         float targetSpeed = horizontalInput * maxMoveSpeed;
         float speedDif = targetSpeed - rb.linearVelocity.x;
         float accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? currentAcceleration : (IsGrounded ? deceleration : airDeceleration);
 
         float movement = speedDif * accelRate;
         rb.AddForce(movement * Vector2.right, ForceMode2D.Force);
+    }
+
+    private void Flip()
+    {
+        isFacingRight = !isFacingRight;
+        spriteTransform.localScale = new Vector3(spriteTransform.localScale.x * -1, 1, 1);
     }
 
     private void HandleWallInteraction()
