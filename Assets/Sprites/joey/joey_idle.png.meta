@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: afe83d826aedb834d9f31fad1e8fd4ef
+guid: 3a4fe16af31ced84da046f165c516603
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7717914305223518851
-    second: joey_run_0
+      213: -7078189901963441814
+    second: joey_idle_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: joey_run_0
+      name: joey_idle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 543
-        height: 408
+        width: 135
+        height: 199
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 38ae0c95b2a8b1b60800000000000000
-      internalID: 7717914305223518851
+      spriteID: a6946b839c735cd90800000000000000
+      internalID: -7078189901963441814
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      joey_run_0: 7717914305223518851
+      joey_idle_0: -7078189901963441814
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
