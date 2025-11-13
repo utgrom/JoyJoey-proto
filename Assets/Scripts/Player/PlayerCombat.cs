@@ -177,5 +177,3 @@ public class PlayerCombat : MonoBehaviour
         playerStats.Heal(CurrentRag.HealthRegenPerSecond * Time.deltaTime);
     }
 }
-
-public enum ActionKey { BasicAttack, SpecialAttack, Trick }

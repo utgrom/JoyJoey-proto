@@ -2,10 +2,6 @@
 using UnityEngine;
 using System;
 
-// These enums are defined here for simplicity, but could be in their own file.
-public enum ActionState { Ground, Air }
-public enum ActionDirection { Neutral, Horizontal, Down }
-
 [CreateAssetMenu(fileName = "Rag", menuName = "JoyJoey/Rag Profile")]
 public class RagProfile : ScriptableObject
 {
