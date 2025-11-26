@@ -13,13 +13,11 @@ public enum PlayerState
     Dashing
 }
 
-[RequireComponent(typeof(PlayerMovement), typeof(PlayerCombat))]
+[RequireComponent(typeof(PlayerMovement))]
 public class PlayerController : MonoBehaviour
 {
     [Header("Components")]
     private PlayerMovement playerMovement;
-    private PlayerCombat playerCombat;
-    private AbilityManager abilityManager;
     public Animator animator; // Referencia al Animator
 
     [Header("Attacks")]
@@ -33,8 +31,6 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         playerMovement = GetComponent<PlayerMovement>();
-        playerCombat = GetComponent<PlayerCombat>();
-        abilityManager = GetComponent<AbilityManager>(); // Can be null
         // Si el Animator está en el mismo objeto, puedes usar GetComponent<Animator>();
     }
 
@@ -48,9 +44,7 @@ public class PlayerController : MonoBehaviour
         bool specialAttackPressed = Input.GetKeyDown(KeyCode.K);
         bool trickPressed = Input.GetKeyDown(KeyCode.H);
 
-        bool cycleNextRagPressed = Input.GetKeyDown(KeyCode.E);
-        bool cyclePrevRagPressed = Input.GetKeyDown(KeyCode.Q);
-        bool transformPressed = Input.GetKeyDown(KeyCode.L);
+        // Legacy rag/transform inputs removed
 
         // --- State & Direction Calculation --- //
         ActionDirection currentActionDirection = GetActionDirection();
@@ -96,9 +90,7 @@ public class PlayerController : MonoBehaviour
 
 
         // Combat & Actions (Non-attack related)
-        if (cycleNextRagPressed) playerCombat.CycleRag(1);
-        if (cyclePrevRagPressed) playerCombat.CycleRag(-1);
-        if (transformPressed) playerCombat.ToggleTransformation();
+        // Legacy combat actions removed
 
         prevMoveInput = moveInput;
         UpdateState();
@@ -161,9 +153,7 @@ public class PlayerController : MonoBehaviour
 
     private void HandleDash(float moveInput)
     {
-        bool canAirDash = abilityManager != null && abilityManager.IsAbilityUnlocked("AirDash");
-
-        if (playerMovement.IsGrounded || canAirDash)
+        if (playerMovement.IsGrounded)
         {
             Vector2 dashDirection = GetActionDirection() switch
             {
@@ -205,3 +195,10 @@ public class PlayerController : MonoBehaviour
     }
     #endregion
 }
+
+
+
+
+
+
+
