@@ -46,8 +46,6 @@ GameObject:
   - component: {fileID: 2493448905270914501}
   - component: {fileID: 848998578247984050}
   - component: {fileID: 1587171205294302771}
-  - component: {fileID: 8480685373916213803}
-  - component: {fileID: 8293001223506399001}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -236,9 +234,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a7c411556afbe14db3ffa70ca3dc51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 7646516221255886450}
-  listaDeAtaques:
-  - {fileID: 11400000, guid: 1a31907928e78e14896b3c110a0b1180, type: 2}
   currentState: 0
 --- !u!114 &1587171205294302771
 MonoBehaviour:
@@ -304,39 +299,6 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
---- !u!114 &8480685373916213803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3572484019288003470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a10c1bd6dc0a253419916b2374681f51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  maxFun: 100
---- !u!114 &8293001223506399001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3572484019288003470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca3373e0e321d8f42b0e26d4e2a3a943, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 7646516221255886450}
-  boolBindings:
-  - source: {fileID: 1587171205294302771}
-    memberName: IsWallSliding
-    animatorBool: IsWallSlide
-    invert: 0
-  warnIfAnimatorBoolMissing: 1
 --- !u!1 &3717008352466026446
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,7 +309,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3939283723611637300}
   - component: {fileID: 9218864002572099595}
-  - component: {fileID: 1629156123046621213}
   m_Layer: 0
   m_Name: Hitxbox_Ballon
   m_TagString: Untagged
@@ -416,23 +377,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1629156123046621213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3717008352466026446}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f30d2bbf9bde0a4c85d8648cd358812, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  owner: {fileID: 3572484019288003470}
-  targetLayers:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!1 &3886178105020034378
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,7 +529,6 @@ GameObject:
   - component: {fileID: 2428872928794119560}
   - component: {fileID: 4361377143878019355}
   - component: {fileID: 7646516221255886450}
-  - component: {fileID: 8638978576467710078}
   m_Layer: 0
   m_Name: JoeySprite
   m_TagString: Untagged
@@ -686,18 +629,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8638978576467710078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6883706725752788714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cddc0292df8e62a4d91bdfb787d7ae06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6911886409010869439
 GameObject:
   m_ObjectHideFlags: 0
