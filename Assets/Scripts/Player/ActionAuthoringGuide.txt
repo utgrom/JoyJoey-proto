@@ -1,0 +1,91 @@
+JoyJoey combat authoring cheat sheet (ASCII only)
+
+Input System map (new Input System):
+- Action Map name: Gameplay
+- Actions:
+  * Move (Vector2) bindings: WASD, Arrows, gamepad left stick
+  * Jump (Button) bindings: Space / South
+  * Dash (Button) bindings: LeftShift / East
+  * ActionBasic (Button) bindings: J / South
+  * ActionSpecial (Button) bindings: K / West
+  * ActionTrick (Button) bindings: L / North
+  * RagNext (Button) bindings: E / RB
+  * RagPrev (Button) bindings: Q / LB
+- Add PlayerInputRouter to the player and assign the InputActionAsset + map name.
+
+Player setup (replace old controller):
+- Remove/disable the old PlayerController script on the player prefab.
+- Add/ensure components: Rigidbody2D, PlayerMovement (already present), PlayerInputRouter, PlayerActionRunner, PlayerCombatController, HitboxSpawner, Hurtbox, Health, RagInventory.
+- Wire references in PlayerCombatController: basicActions (ActionDefinition asset), RagInventory, ActionRunner, Movement, Health, Hurtbox, InputRouter.
+- Hurtbox: assign Health + Rigidbody2D, set useArmor=false for player. For enemies set armorInfinite=true for bosses.
+- HitboxSpawner sits on the same GameObject; ProjectileMover goes on projectile prefabs.
+- Animator (optional): set trigger names matching ActionVariant.animatorTrigger.
+
+Data assets to create:
+- HitboxConfig assets for each hit type (damage/knockback per hit, target layers, prefab with collider trigger). Prefab can be a simple empty with CircleCollider2D trigger; HitboxInstance will be added if missing.
+- ActionDefinition assets:
+  * Base basic set (slot=Basic) with variants for Ground Neutral/Horizontal/Down and Air Neutral/Down.
+  * Rag1 Strongman: special ground/air, forward special, forward trick.
+  * Rag2 Balloon Master: special neutral, special forward (projectile), trick ground/air.
+- RagProfile assets:
+  * Strongman: assign its specials/tricks (ground/air separate).
+  * Balloon Master: assign its specials/tricks (ground/air separate).
+  * Drag RagProfiles into RagInventory list on the player.
+
+Cancel tags (use in ActionVariant.cancelTagsGranted and cancelTagsRequiredToEnter):
+- Use "basic_chain" for light strings, "air_chain" for air lights, "special_chain" for special follow-ups.
+
+Suggested per-move configs (tweak in editor):
+Balloon Cuts (Basic Neutral Ground)
+- startup 0.08, active 0.45 total, recovery 0.2. cancelWindowStart=0.18, cancelWindowEnd=0.26 (between hit2 and hit3). canCancelDuringRecovery=false.
+- Hitboxes: three events at t=0.08, 0.16, 0.32. First two light (low knockback), third with small push.
+- Motion: zeroVelocityOnStart=true.
+- cancelTagsGranted: ["basic_chain"].
+
+Balloon Slash (Basic Horizontal Ground)
+- startup 0.12, active 0.55, recovery 0.35, no cancel.
+- MotionEvents: t=0.0 Set velocity (forward dash, e.g., x=10). GravityMode=Normal.
+- Hitboxes: sweeping hit at t=0.12 and finisher at t=0.5 with stronger knockback.
+
+Pop Launch (Basic Down Ground)
+- startup 0.1, active 0.25, recovery 0.35, no cancel.
+- Hitbox: single upward launch at t=0.1 with high vertical knockback.
+- Motion: zeroVelocityOnStart=true.
+
+Balloon Air-Raid (Basic Neutral Air)
+- startup 0.08, active 0.5, recovery 0.25. cancelWindowStart=0.28, cancelWindowEnd=0.38 (after 3 hits before finisher).
+- GravityMode=SuspendSetYZero on first aerial action; if reusing aerial actions set the variant gravityMode to SuspendKeepY.
+- Hitboxes: t=0.08/0.16/0.24 for the 3 spin hits, t=0.42 for horizontal finisher.
+- Motion: optional small horizontal set at t=0.0 based on facing.
+- cancelTagsGranted: ["air_chain"].
+
+Pop Drop (Basic Down Air)
+- startup 0.05, active 0.7 (covers descent), recovery 0.25. no cancel.
+- GravityMode=Normal; MotionEvent t=0.0 Set velocity (x=0, y=-25) to force plunge.
+- Hitbox 1: t=0.02 attached to player, payload.inheritSourceVerticalVelocity=true, resetVerticalVelocity=false, knockback Y negative.
+- Hitbox 2 (landing burst): add another ActionHitboxEvent at t=0.5 with a radial hitbox; set hitboxPrefab to a larger circle.
+
+Strongman: Titanenklatsch (Special Neutral Ground/Air are separate ActionDefinitions)
+- Ground: startup 0.12, active 0.25, recovery 0.45, no cancel. zeroVelocityOnStart=true. Motion: small forward Set (x=3). Hitbox: single clap at t=0.12, knockback upward if target already airborne.
+- Air: same timings, preserveHorizontalMomentum=true, zeroVelocityOnStart=false, GravityMode=SuspendKeepY.
+
+Strongman: Ohrfeige (Special Forward Ground)
+- startup 0.14, active 0.3, recovery 0.35, canCancelDuringRecovery=true (for follow-ups). Motion: Set forward velocity x=8 at t=0.0. Hitbox: main slap at t=0.14 with strong horizontal knockback.
+
+Strongman: Riesensprung (Trick Forward Ground)
+- startup 0.05, active 0.6, recovery 0.2. No hitboxes (mobility only). Motion: Set velocity to a long leap (e.g., x=12, y=6) at t=0.0. GravityMode=Normal.
+
+Balloon Master: Overhead Pop (Special Neutral Ground)
+- startup 0.12, active 0.3, recovery 0.35. Motion: zeroVelocityOnStart=true. Hitbox: t=0.12 above the head with upward knockback.
+
+Balloon Master: Balloon Burst (Special Forward Ground, projectile)
+- startup 0.1, active 0.2, recovery 0.15 (short). Motion: zeroVelocityOnStart=true. Hitboxes: use three ActionHitboxEvents spawning a projectile prefab at t=0.05/0.15/0.25. ProjectileMover speed ~12, lifetime ~2s, payload with zero knockback but resetVerticalVelocity=true to freeze fall. Recovery ends before projectiles expire (so the player can act).
+
+Balloon Master: Balloon Ride (Trick Forward Ground/Air separate definitions)
+- startup 0.1, active 5.0, recovery 0.2. GravityMode=SuspendSetYZero (Ground) and SuspendKeepY (Air). Motion: Set velocity (x=8, y=0) at t=0.1. No hitboxes. If hit during ride, hitstun will cancel via Hurtbox.
+
+Armor rules
+- Regular enemies: set Hurtbox useArmor=true, armorMax ~20, regenDelay ~1.5s, regenRate ~5. Bosses: armorInfinite=true and control vulnerability via their own script.
+
+UI health hookup
+- Health.OnHealthChanged(float current, float max): scale the foreground rect X = current/max. Health.OnDeath to trigger respawn or fail state.

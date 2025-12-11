@@ -2,11 +2,16 @@ using UnityEngine;
 
 public enum PlayerState
 {
-    Idle,
+    IdleGround,
+    IdleAir,
     Moving,
     Jumping,
     Falling,
-    Dashing
+    Dash,
+    WallSlide,
+    Action,
+    Hitstun,
+    Dead
 }
 
 [RequireComponent(typeof(PlayerMovement))]
@@ -80,14 +85,14 @@ public class PlayerController : MonoBehaviour
         Vector2 dashDirection = downHeld ? Vector2.down : new Vector2(lastFacing, 0f);
 
         playerMovement.Dash(dashDirection);
-        currentState = PlayerState.Dashing;
+        currentState = PlayerState.Dash;
     }
 
     private void UpdateState()
     {
         if (playerMovement.IsDashing)
         {
-            currentState = PlayerState.Dashing;
+            currentState = PlayerState.Dash;
             return;
         }
 
@@ -101,7 +106,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            currentState = PlayerState.Idle;
+            currentState = PlayerState.IdleGround;
         }
     }
 }
