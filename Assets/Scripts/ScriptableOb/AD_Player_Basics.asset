@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e45bf0f73d8e1643b46aee0e3ee6139, type: 3}
+  m_Name: AD_Player_Basics
+  m_EditorClassIdentifier: 
+  actionId: 
+  slot: 0
+  variants:
+  - variantId: basic_ground_horizontal
+    context: 0
+    direction: 1
+    startup: 0.12
+    active: 0.55
+    recovery: 0.35
+    canCancelDuringRecovery: 0
+    cancelWindowStart: -1
+    cancelWindowEnd: -1
+    cancelTagsGranted: []
+    cancelTagsRequiredToEnter: []
+    zeroVelocityOnStart: 1
+    preserveHorizontalMomentum: 0
+    gravityMode: 0
+    motionEvents:
+    - time: 0
+      velocity: {x: 10, y: 0}
+      applyMode: 0
+    hitboxEvents:
+    - time: 0.12
+      hitbox: {fileID: 11400000, guid: 19b555d63a096ee47810b3e3078bf70d, type: 2}
+      durationOverride: -1
+    - time: 0.5
+      hitbox: {fileID: 11400000, guid: 19b555d63a096ee47810b3e3078bf70d, type: 2}
+      durationOverride: -1
+    animatorTrigger: BallonSlash

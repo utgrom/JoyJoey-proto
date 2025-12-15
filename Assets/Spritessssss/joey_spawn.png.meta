@@ -1,0 +1,1573 @@
+fileFormatVersion: 2
+guid: 88c71e2a571c38248b361ea69aa0c066
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8704299213301449447
+    second: joey_spawn_0
+  - first:
+      213: -79943053838825534
+    second: joey_spawn_1
+  - first:
+      213: 7796335653726742552
+    second: joey_spawn_2
+  - first:
+      213: -6720228365228527659
+    second: joey_spawn_3
+  - first:
+      213: 1408865283819203513
+    second: joey_spawn_4
+  - first:
+      213: 7550475718633676714
+    second: joey_spawn_5
+  - first:
+      213: 2794191875484516426
+    second: joey_spawn_6
+  - first:
+      213: 4775578835681522142
+    second: joey_spawn_7
+  - first:
+      213: -6385192251277177807
+    second: joey_spawn_8
+  - first:
+      213: -5239092099812299294
+    second: joey_spawn_9
+  - first:
+      213: 7859641998439065067
+    second: joey_spawn_10
+  - first:
+      213: -4943454131904123566
+    second: joey_spawn_11
+  - first:
+      213: 2075646430243113717
+    second: joey_spawn_12
+  - first:
+      213: 966832142552186284
+    second: joey_spawn_13
+  - first:
+      213: 5008281712137356355
+    second: joey_spawn_14
+  - first:
+      213: 7229275512062730543
+    second: joey_spawn_15
+  - first:
+      213: -3821000000249905454
+    second: joey_spawn_16
+  - first:
+      213: -416928267933516143
+    second: joey_spawn_17
+  - first:
+      213: -6787394052849469885
+    second: joey_spawn_18
+  - first:
+      213: 5771916059372431047
+    second: joey_spawn_19
+  - first:
+      213: 1992597676800956884
+    second: joey_spawn_20
+  - first:
+      213: -1284979141208613065
+    second: joey_spawn_21
+  - first:
+      213: 6149748798919671327
+    second: joey_spawn_22
+  - first:
+      213: -1027464735871370358
+    second: joey_spawn_23
+  - first:
+      213: 3746164507985973175
+    second: joey_spawn_24
+  - first:
+      213: -5306661755018586860
+    second: joey_spawn_25
+  - first:
+      213: 3373306830548755024
+    second: joey_spawn_26
+  - first:
+      213: 1401226724843314367
+    second: joey_spawn_27
+  - first:
+      213: -263391365126558153
+    second: joey_spawn_28
+  - first:
+      213: -436000829545235142
+    second: joey_spawn_29
+  - first:
+      213: -2428386978885531886
+    second: joey_spawn_30
+  - first:
+      213: 11096224321875129
+    second: joey_spawn_31
+  - first:
+      213: -640554635771870863
+    second: joey_spawn_32
+  - first:
+      213: 3847540726336282478
+    second: joey_spawn_33
+  - first:
+      213: -2132641941485332608
+    second: joey_spawn_34
+  - first:
+      213: 4393589614857752127
+    second: joey_spawn_35
+  - first:
+      213: -3415784501670835408
+    second: joey_spawn_36
+  - first:
+      213: -2470990218759516186
+    second: joey_spawn_37
+  - first:
+      213: 1553955386457098654
+    second: joey_spawn_38
+  - first:
+      213: -2359805518531738525
+    second: joey_spawn_39
+  - first:
+      213: 5776489464668159816
+    second: joey_spawn_40
+  - first:
+      213: 4290678835954550030
+    second: joey_spawn_41
+  - first:
+      213: -3171525895947104298
+    second: joey_spawn_42
+  - first:
+      213: 7427019549831223842
+    second: joey_spawn_43
+  - first:
+      213: 3501545734681162266
+    second: joey_spawn_44
+  - first:
+      213: -1448452377747700241
+    second: joey_spawn_45
+  - first:
+      213: -9021003616342289929
+    second: joey_spawn_46
+  - first:
+      213: -2707543456881409714
+    second: joey_spawn_47
+  - first:
+      213: 7874749553734137899
+    second: joey_spawn_48
+  - first:
+      213: 2788284306516691760
+    second: joey_spawn_49
+  - first:
+      213: 8646808709303262904
+    second: joey_spawn_50
+  - first:
+      213: 8945803050633492921
+    second: joey_spawn_51
+  - first:
+      213: 2377370371558561899
+    second: joey_spawn_52
+  - first:
+      213: -1278667997127373401
+    second: joey_spawn_53
+  - first:
+      213: -2189166920234500747
+    second: joey_spawn_54
+  - first:
+      213: 4645742224435550403
+    second: joey_spawn_55
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: joey_spawn_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 189
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91d747c9bfd143780800000000000000
+      internalID: -8704299213301449447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 194
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c74da1573cf3eef0800000000000000
+      internalID: -79943053838825534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 193
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 818681668f5223c60800000000000000
+      internalID: 7796335653726742552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_3
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 192
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dfac0938e3fcb2a0800000000000000
+      internalID: -6720228365228527659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_4
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 179
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bb6c6ad28b4d8310800000000000000
+      internalID: 1408865283819203513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 178
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf5f5679ada8c860800000000000000
+      internalID: 7550475718633676714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_6
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 170
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a40898cd4b6f6c620800000000000000
+      internalID: 2794191875484516426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 158
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed1bba126a3464240800000000000000
+      internalID: 4775578835681522142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_8
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 157
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13c0c084a7d3367a0800000000000000
+      internalID: -6385192251277177807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_9
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 123
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ede12d3e710b47b0800000000000000
+      internalID: -5239092099812299294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_10
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 145
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be5a3b261ce031d60800000000000000
+      internalID: 7859641998439065067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_11
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 139
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25dea6898a2556bb0800000000000000
+      internalID: -4943454131904123566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_12
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 127
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fac2f95e6d2ecc10800000000000000
+      internalID: 2075646430243113717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_13
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 123
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cadb04e06b0ea6d00800000000000000
+      internalID: 966832142552186284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_14
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 127
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3444803aeadf08540800000000000000
+      internalID: 5008281712137356355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_15
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 127
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f21edef96cb835460800000000000000
+      internalID: 7229275512062730543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_16
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 128
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2de365a8eb419fac0800000000000000
+      internalID: -3821000000249905454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_17
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 128
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19ef00503f5c63af0800000000000000
+      internalID: -416928267933516143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 99
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 346fe41f1155ec1a0800000000000000
+      internalID: -6787394052849469885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_19
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 106
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c624483317f91050800000000000000
+      internalID: 5771916059372431047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_20
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 102
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d95df1a70127ab10800000000000000
+      internalID: 1992597676800956884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_21
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 102
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73f59787746da2ee0800000000000000
+      internalID: -1284979141208613065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_22
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 114
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1efd7923fb485550800000000000000
+      internalID: 6149748798919671327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 108
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8b75273446bdb1f0800000000000000
+      internalID: -1027464735871370358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_24
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 94
+        width: 6
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bf0ea0a5cc0df330800000000000000
+      internalID: 3746164507985973175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_25
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 89
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41557fcef33fa56b0800000000000000
+      internalID: -5306661755018586860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_26
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 93
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 052e14990b460de20800000000000000
+      internalID: 3373306830548755024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_27
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 104
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbcd1104848227310800000000000000
+      internalID: 1401226724843314367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 74
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73ee9bce2fe385cf0800000000000000
+      internalID: -263391365126558153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_29
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 81
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3d3e293e8303f9f0800000000000000
+      internalID: -436000829545235142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_30
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 86
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 217085aa8e2ac4ed0800000000000000
+      internalID: -2428386978885531886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_31
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 88
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bcad0d05fb672000800000000000000
+      internalID: 11096224321875129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_32
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 68
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 171869bd3fa4c17f0800000000000000
+      internalID: -640554635771870863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_33
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 70
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6f5f1cc7e5356530800000000000000
+      internalID: 3847540726336282478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_34
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 79
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 087daa414755762e0800000000000000
+      internalID: -2132641941485332608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_35
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 64
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3e017af97a29fc30800000000000000
+      internalID: 4393589614857752127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_36
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 59
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03b00a4e712b890d0800000000000000
+      internalID: -3415784501670835408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_37
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 56
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6efcf57ec7745bdd0800000000000000
+      internalID: -2470990218759516186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_38
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 52
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e998496d032c09510800000000000000
+      internalID: 1553955386457098654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_39
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 36
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 364c8e83269404fd0800000000000000
+      internalID: -2359805518531738525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_40
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 34
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84ff45e10963a2050800000000000000
+      internalID: 5776489464668159816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_41
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 12
+        width: 9
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e058b561bad8b8b30800000000000000
+      internalID: 4290678835954550030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_42
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 42
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dfce18400a7cf3d0800000000000000
+      internalID: -3171525895947104298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_43
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 28
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22a52973ee2121760800000000000000
+      internalID: 7427019549831223842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_44
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 41
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1274703b4df79030800000000000000
+      internalID: 3501545734681162266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_45
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 18
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe547469c3016ebe0800000000000000
+      internalID: -1448452377747700241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_46
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 12
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f1576a9105fec280800000000000000
+      internalID: -9021003616342289929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_47
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 9
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4186a6329fdc6ad0800000000000000
+      internalID: -2707543456881409714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_48
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 13
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b283d753ffab84d60800000000000000
+      internalID: 7874749553734137899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_49
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 11
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03b49b6cdc9f1b620800000000000000
+      internalID: 2788284306516691760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_50
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 11
+        width: 5
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8be56c655b2aff770800000000000000
+      internalID: 8646808709303262904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_51
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 0
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b97d974a70e52c70800000000000000
+      internalID: 8945803050633492921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_52
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 0
+        width: 26
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b685940d1cd1ef020800000000000000
+      internalID: 2377370371558561899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_53
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ad00953b32414ee0800000000000000
+      internalID: -1278667997127373401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_54
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 0
+        width: 17
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57df265e8448e91e0800000000000000
+      internalID: -2189166920234500747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joey_spawn_55
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c8938d50fdf87040800000000000000
+      internalID: 4645742224435550403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      joey_spawn_0: -8704299213301449447
+      joey_spawn_1: -79943053838825534
+      joey_spawn_10: 7859641998439065067
+      joey_spawn_11: -4943454131904123566
+      joey_spawn_12: 2075646430243113717
+      joey_spawn_13: 966832142552186284
+      joey_spawn_14: 5008281712137356355
+      joey_spawn_15: 7229275512062730543
+      joey_spawn_16: -3821000000249905454
+      joey_spawn_17: -416928267933516143
+      joey_spawn_18: -6787394052849469885
+      joey_spawn_19: 5771916059372431047
+      joey_spawn_2: 7796335653726742552
+      joey_spawn_20: 1992597676800956884
+      joey_spawn_21: -1284979141208613065
+      joey_spawn_22: 6149748798919671327
+      joey_spawn_23: -1027464735871370358
+      joey_spawn_24: 3746164507985973175
+      joey_spawn_25: -5306661755018586860
+      joey_spawn_26: 3373306830548755024
+      joey_spawn_27: 1401226724843314367
+      joey_spawn_28: -263391365126558153
+      joey_spawn_29: -436000829545235142
+      joey_spawn_3: -6720228365228527659
+      joey_spawn_30: -2428386978885531886
+      joey_spawn_31: 11096224321875129
+      joey_spawn_32: -640554635771870863
+      joey_spawn_33: 3847540726336282478
+      joey_spawn_34: -2132641941485332608
+      joey_spawn_35: 4393589614857752127
+      joey_spawn_36: -3415784501670835408
+      joey_spawn_37: -2470990218759516186
+      joey_spawn_38: 1553955386457098654
+      joey_spawn_39: -2359805518531738525
+      joey_spawn_4: 1408865283819203513
+      joey_spawn_40: 5776489464668159816
+      joey_spawn_41: 4290678835954550030
+      joey_spawn_42: -3171525895947104298
+      joey_spawn_43: 7427019549831223842
+      joey_spawn_44: 3501545734681162266
+      joey_spawn_45: -1448452377747700241
+      joey_spawn_46: -9021003616342289929
+      joey_spawn_47: -2707543456881409714
+      joey_spawn_48: 7874749553734137899
+      joey_spawn_49: 2788284306516691760
+      joey_spawn_5: 7550475718633676714
+      joey_spawn_50: 8646808709303262904
+      joey_spawn_51: 8945803050633492921
+      joey_spawn_52: 2377370371558561899
+      joey_spawn_53: -1278667997127373401
+      joey_spawn_54: -2189166920234500747
+      joey_spawn_55: 4645742224435550403
+      joey_spawn_6: 2794191875484516426
+      joey_spawn_7: 4775578835681522142
+      joey_spawn_8: -6385192251277177807
+      joey_spawn_9: -5239092099812299294
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

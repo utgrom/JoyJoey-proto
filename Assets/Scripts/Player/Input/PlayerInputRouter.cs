@@ -7,6 +7,15 @@ public class PlayerInputRouter : MonoBehaviour
     [Header("Input Asset")]
     [SerializeField] private InputActionAsset inputActions;
     [SerializeField] private string actionMapName = "Gameplay";
+    [Header("Action Names")]
+    [SerializeField] private string moveActionName = "Move";
+    [SerializeField] private string jumpActionName = "Jump";
+    [SerializeField] private string dashActionName = "Dash";
+    [SerializeField] private string actionBasicName = "ActionBasic";
+    [SerializeField] private string actionSpecialName = "ActionSpecial";
+    [SerializeField] private string actionTrickName = "ActionTrick";
+    [SerializeField] private string ragNextActionName = "RagNext";
+    [SerializeField] private string ragPrevActionName = "RagPrev";
 
     public event Action<Vector2> OnMove;
     public event Action OnJumpStarted;
@@ -40,14 +49,14 @@ public class PlayerInputRouter : MonoBehaviour
             return;
         }
 
-        move = map.FindAction("Move");
-        jump = map.FindAction("Jump");
-        dash = map.FindAction("Dash");
-        actionBasic = map.FindAction("ActionBasic");
-        actionSpecial = map.FindAction("ActionSpecial");
-        actionTrick = map.FindAction("ActionTrick");
-        ragNext = map.FindAction("RagNext");
-        ragPrev = map.FindAction("RagPrev");
+        move = map.FindAction(moveActionName);
+        jump = map.FindAction(jumpActionName);
+        dash = map.FindAction(dashActionName);
+        actionBasic = map.FindAction(actionBasicName);
+        actionSpecial = map.FindAction(actionSpecialName);
+        actionTrick = map.FindAction(actionTrickName);
+        ragNext = map.FindAction(ragNextActionName);
+        ragPrev = map.FindAction(ragPrevActionName);
 
         map.Enable();
 

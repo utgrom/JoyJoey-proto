@@ -427,6 +427,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputActions: {fileID: -944628639613478452, guid: 95818576475abe745ace35f3b75e7c3e, type: 3}
   actionMapName: Gameplay
+  moveActionName: Moving
+  jumpActionName: Jump
+  dashActionName: Dash
+  actionBasicName: Normal attack
+  actionSpecialName: Special Attack
+  actionTrickName: Skill
+  ragNextActionName: Next Rag
+  ragPrevActionName: Previous Rag
 --- !u!114 &8741812662634148563
 MonoBehaviour:
   m_ObjectHideFlags: 0
