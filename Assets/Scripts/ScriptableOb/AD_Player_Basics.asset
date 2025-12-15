@@ -72,8 +72,8 @@ MonoBehaviour:
     context: 1
     direction: 0
     startup: 0.1
-    active: 0.5
-    recovery: 0.1
+    active: 0.65
+    recovery: 0.11
     canCancelDuringRecovery: 0
     cancelWindowStart: -1
     cancelWindowEnd: -1
@@ -83,13 +83,19 @@ MonoBehaviour:
     preserveHorizontalMomentum: 1
     lockFacing: 1
     lockMoveKeys: 0
-    gravityMode: 1
+    gravityMode: 2
     motionEvents:
     - time: 0
-      velocity: {x: 0, y: 2}
+      velocity: {x: 10, y: 5}
       applyMode: 1
     hitboxEvents:
-    - time: 0.5
-      hitbox: {fileID: 11400000, guid: 2e721f8f33a88254a9ace1d68aff46d1, type: 2}
-      durationOverride: -1
-    animatorTrigger: BallonSlash
+    - time: 0.2
+      hitbox: {fileID: 11400000, guid: d5a2c0e50b1bd80458a25877bb24c115, type: 2}
+      durationOverride: 0.1
+    - time: 0.35
+      hitbox: {fileID: 11400000, guid: d5a2c0e50b1bd80458a25877bb24c115, type: 2}
+      durationOverride: 0.1
+    - time: 0.65
+      hitbox: {fileID: 11400000, guid: 19b555d63a096ee47810b3e3078bf70d, type: 2}
+      durationOverride: 0.2
+    animatorTrigger: AirBallonCut

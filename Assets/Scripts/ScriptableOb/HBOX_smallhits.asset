@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitboxPrefab: {fileID: 5345622622785483517, guid: 5fc56e63652189144bac92cd6790651c, type: 3}
   payload:
-    damage: 20
-    hitstunSeconds: 0.35
-    armorBreak: 2
-    knockback: {x: 10, y: 1}
-    resetVerticalVelocity: 0
+    damage: 8
+    hitstunSeconds: 0.2
+    armorBreak: 1
+    knockback: {x: 1, y: 0}
+    resetVerticalVelocity: 1
     inheritSourceVerticalVelocity: 0
     ignoreIFrames: 0
     cancelPlayerAction: 0
@@ -26,8 +26,8 @@ MonoBehaviour:
   targetLayers:
     serializedVersion: 2
     m_Bits: 128
-  attachToOwner: 0
+  attachToOwner: 1
   localOffset: {x: 1.5, y: 0}
-  radius: 1.2
+  radius: 1.1
   flipWithFacing: 1
   lifeSeconds: 0.2
