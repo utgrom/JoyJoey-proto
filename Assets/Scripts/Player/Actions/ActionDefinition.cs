@@ -29,6 +29,8 @@ public class ActionVariant
     [Header("Motion")]
     public bool zeroVelocityOnStart = true;
     public bool preserveHorizontalMomentum = false;
+    public bool lockFacing = true;
+    public bool lockMoveKeys = true;
     public GravityMode gravityMode = GravityMode.Normal;
     public ActionMotionEvent[] motionEvents;
 

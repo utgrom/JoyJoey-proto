@@ -11,6 +11,9 @@ public class PlayerActionRunner : MonoBehaviour
 
     public bool IsPlaying => currentVariant != null;
     public bool InRecoveryPhase => IsPlaying && elapsed > (currentVariant.startup + currentVariant.active);
+    public bool InActivePhase => IsPlaying && elapsed >= currentVariant.startup && elapsed < (currentVariant.startup + currentVariant.active);
+    public bool BeforeRecoveryPhase => IsPlaying && elapsed < (currentVariant.startup + currentVariant.active);
+    public ActionVariant CurrentVariant => currentVariant;
 
     private Rigidbody2D rb;
     private ActionVariant currentVariant;

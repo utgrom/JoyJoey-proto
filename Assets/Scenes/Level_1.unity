@@ -691,7 +691,7 @@ Transform:
   m_GameObject: {fileID: 102285236}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.5639997, y: -5.114, z: -10}
+  m_LocalPosition: {x: 37.4, y: 27.1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2433,7 +2433,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.4065146, y: 0.17547989, z: -10}
+  m_LocalPosition: {x: 35.777782, y: 27.91092, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4798,7 +4798,19 @@ MonoBehaviour:
       m_Calls: []
   OnDeath:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1473603044}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &1473603049
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4860,7 +4872,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -4868,10 +4880,10 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &1473603051
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7366,11 +7378,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000626420753267467, guid: cf71ea7022cea5448adeb72daf57209f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.5639997
+      value: 37.4
       objectReference: {fileID: 0}
     - target: {fileID: 4000626420753267467, guid: cf71ea7022cea5448adeb72daf57209f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.114
+      value: 27.1
       objectReference: {fileID: 0}
     - target: {fileID: 4000626420753267467, guid: cf71ea7022cea5448adeb72daf57209f, type: 3}
       propertyPath: m_LocalPosition.z

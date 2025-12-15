@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8bb5dc1232d3aa942afefef767e5336b, type: 3}
-  m_Name: HitboxTest
+  m_Name: HitboxUp
   m_EditorClassIdentifier: 
   hitboxPrefab: {fileID: 5345622622785483517, guid: 5fc56e63652189144bac92cd6790651c, type: 3}
   payload:
     damage: 8
     hitstunSeconds: 0.35
     armorBreak: 2
-    knockback: {x: 10, y: 1}
-    resetVerticalVelocity: 0
+    knockback: {x: 0, y: 20}
+    resetVerticalVelocity: 1
     inheritSourceVerticalVelocity: 0
     ignoreIFrames: 0
     cancelPlayerAction: 0
@@ -27,7 +27,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   attachToOwner: 0
-  localOffset: {x: 1, y: 0}
-  radius: 1
+  localOffset: {x: 1, y: 0.5}
+  radius: 1.5
   flipWithFacing: 1
   lifeSeconds: 0.2

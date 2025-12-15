@@ -21,6 +21,8 @@ public class PlayerCombatController : MonoBehaviour
     private ActionResolver actionResolver;
     private float lastFacing = 1f;
     private Vector2 lastMoveInput;
+    private bool facingLockedDuringAction;
+    private bool moveKeysLocked;
 
     private void Awake()
     {
@@ -110,7 +112,9 @@ public class PlayerCombatController : MonoBehaviour
     {
         if (currentState == PlayerState.Dead) return;
         lastMoveInput = moveInput;
-        movement.SetMoveInput(moveInput.x);
+
+        float appliedMove = moveKeysLocked ? 0f : moveInput.x;
+        movement.SetMoveInput(appliedMove);
 
         if (Mathf.Abs(moveInput.x) > 0.01f)
         {
@@ -122,6 +126,8 @@ public class PlayerCombatController : MonoBehaviour
     {
         if (currentState == PlayerState.Dead) return;
         bool downHeld = lastMoveInput.y < -0.5f;
+
+        if (moveKeysLocked) return;
 
         if (downHeld && movement.IsGrounded)
         {
@@ -159,8 +165,20 @@ public class PlayerCombatController : MonoBehaviour
 
         if (actionRunner.CanEnter(variant))
         {
+            if (facingLockedDuringAction && !variant.lockFacing)
+            {
+                movement.UnlockFacing();
+                facingLockedDuringAction = false;
+            }
+
             Vector2 facingDir = new(lastFacing, 0f);
             actionRunner.TryStart(variant, facingDir);
+            if (variant.lockFacing)
+            {
+                movement.LockFacing(facingDir.x);
+                facingLockedDuringAction = true;
+            }
+            moveKeysLocked = variant.lockMoveKeys;
             currentState = PlayerState.Action;
         }
     }
@@ -174,6 +192,26 @@ public class PlayerCombatController : MonoBehaviour
             actionRunner.ForceCancel();
             hitstunTimer = ctx.payload.hitstunSeconds;
             currentState = PlayerState.Hitstun;
+            moveKeysLocked = false;
+            if (facingLockedDuringAction)
+            {
+                movement.UnlockFacing();
+                facingLockedDuringAction = false;
+            }
+        }
+    }
+
+    private void LateUpdate()
+    {
+        if (!actionRunner.IsPlaying && facingLockedDuringAction)
+        {
+            movement.UnlockFacing();
+            facingLockedDuringAction = false;
+        }
+
+        if (!actionRunner.IsPlaying || actionRunner.CurrentVariant == null || !actionRunner.BeforeRecoveryPhase)
+        {
+            moveKeysLocked = false;
         }
     }
 }

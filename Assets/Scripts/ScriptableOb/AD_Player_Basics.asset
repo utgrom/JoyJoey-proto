@@ -18,9 +18,9 @@ MonoBehaviour:
   - variantId: basic_ground_horizontal
     context: 0
     direction: 1
-    startup: 0.12
-    active: 0.55
-    recovery: 0.35
+    startup: 0.1
+    active: 0.323
+    recovery: 0.255
     canCancelDuringRecovery: 0
     cancelWindowStart: -1
     cancelWindowEnd: -1
@@ -28,16 +28,43 @@ MonoBehaviour:
     cancelTagsRequiredToEnter: []
     zeroVelocityOnStart: 1
     preserveHorizontalMomentum: 0
+    lockFacing: 1
+    lockMoveKeys: 1
     gravityMode: 0
     motionEvents:
     - time: 0
-      velocity: {x: 10, y: 0}
+      velocity: {x: 50, y: 5}
       applyMode: 0
     hitboxEvents:
-    - time: 0.12
+    - time: 0.19
       hitbox: {fileID: 11400000, guid: 19b555d63a096ee47810b3e3078bf70d, type: 2}
       durationOverride: -1
-    - time: 0.5
+    - time: 0.391
       hitbox: {fileID: 11400000, guid: 19b555d63a096ee47810b3e3078bf70d, type: 2}
+      durationOverride: -1
+    animatorTrigger: BallonSlash
+  - variantId: basic_ground_down
+    context: 0
+    direction: 2
+    startup: 0.1
+    active: 0.2
+    recovery: 0.255
+    canCancelDuringRecovery: 0
+    cancelWindowStart: -1
+    cancelWindowEnd: -1
+    cancelTagsGranted: []
+    cancelTagsRequiredToEnter: []
+    zeroVelocityOnStart: 1
+    preserveHorizontalMomentum: 0
+    lockFacing: 1
+    lockMoveKeys: 1
+    gravityMode: 0
+    motionEvents:
+    - time: 0.2
+      velocity: {x: 0, y: 20}
+      applyMode: 0
+    hitboxEvents:
+    - time: 0.2
+      hitbox: {fileID: 11400000, guid: 2e721f8f33a88254a9ace1d68aff46d1, type: 2}
       durationOverride: -1
     animatorTrigger: BallonSlash

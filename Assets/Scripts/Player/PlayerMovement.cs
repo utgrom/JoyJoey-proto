@@ -63,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
     private float currentAcceleration;
     private bool isJumpingFromWall = false;
     private bool isFacingRight = true;
+    private bool facingLocked = false;
 
     private void Awake()
     {
@@ -189,11 +190,11 @@ public class PlayerMovement : MonoBehaviour
         if (IsDashing) return;
 
         // Flip direction
-        if (horizontalInput > 0 && !isFacingRight)
+        if (!facingLocked && horizontalInput > 0 && !isFacingRight)
         {
             Flip();
         }
-        else if (horizontalInput < 0 && isFacingRight)
+        else if (!facingLocked && horizontalInput < 0 && isFacingRight)
         {
             Flip();
         }
@@ -206,8 +207,9 @@ public class PlayerMovement : MonoBehaviour
         rb.AddForce(movement * Vector2.right, ForceMode2D.Force);
     }
 
-    private void Flip()
+    private void Flip(bool force = false)
     {
+        if (facingLocked && !force) return;
         isFacingRight = !isFacingRight;
         spriteTransform.localScale = new Vector3(spriteTransform.localScale.x * -1, 1, 1);
     }
@@ -265,6 +267,19 @@ public class PlayerMovement : MonoBehaviour
             currentAcceleration = acceleration;
             wallJumpInputLockTimer = 0;
         }
+    }
+
+    public void LockFacing(float desiredSign)
+    {
+        facingLocked = true;
+        desiredSign = Mathf.Sign(desiredSign == 0 ? (isFacingRight ? 1f : -1f) : desiredSign);
+        if (desiredSign > 0 && !isFacingRight) Flip(force: true);
+        else if (desiredSign < 0 && isFacingRight) Flip(force: true);
+    }
+
+    public void UnlockFacing()
+    {
+        facingLocked = false;
     }
 
     private void HandleDashTimer()
