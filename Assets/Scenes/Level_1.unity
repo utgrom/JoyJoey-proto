@@ -4774,7 +4774,7 @@ MonoBehaviour:
   rb: {fileID: 1473603050}
   weightHorizontal: 1
   weightVertical: 1
-  useArmor: 0
+  useArmor: 1
   armorInfinite: 0
   armorMax: 20
   armorRegenDelay: 1.5
@@ -4873,7 +4873,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 2
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4cca12f6cb651994a88c4ceae82d0e10, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -7368,10 +7368,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 754775016185746221, guid: cf71ea7022cea5448adeb72daf57209f, type: 3}
-      propertyPath: basicActions
-      value: 
-      objectReference: {fileID: 11400000, guid: 3dae9d5ff5567ac4e87c7f7e4d9497b6, type: 2}
     - target: {fileID: 3572484019288003470, guid: cf71ea7022cea5448adeb72daf57209f, type: 3}
       propertyPath: m_Name
       value: Player

@@ -23,6 +23,9 @@ public class PlayerCombatController : MonoBehaviour
     private Vector2 lastMoveInput;
     private bool facingLockedDuringAction;
     private bool moveKeysLocked;
+    private bool moveWasLockedPrev;
+    private Rigidbody2D rb;
+    private bool horizontalControlWasEnabled = true;
 
     private void Awake()
     {
@@ -32,6 +35,7 @@ public class PlayerCombatController : MonoBehaviour
         if (!ragInventory) ragInventory = GetComponent<RagInventory>();
         if (!health) health = GetComponent<Health>();
         if (!hurtbox) hurtbox = GetComponent<Hurtbox>();
+        rb = GetComponent<Rigidbody2D>();
 
         actionResolver = new ActionResolver(basicActions, ragInventory);
     }
@@ -179,8 +183,18 @@ public class PlayerCombatController : MonoBehaviour
                 facingLockedDuringAction = true;
             }
             moveKeysLocked = variant.lockMoveKeys;
-            currentState = PlayerState.Action;
+        if (variant.lockMoveKeys)
+        {
+            movement.SetMoveInput(0f);
+            if (!variant.preserveHorizontalMomentum && rb != null)
+            {
+                rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+            }
+            movement.SetHorizontalControlEnabled(false);
+            horizontalControlWasEnabled = false;
         }
+        currentState = PlayerState.Action;
+    }
     }
 
     private void HandleHit(HitContext ctx)
@@ -193,6 +207,8 @@ public class PlayerCombatController : MonoBehaviour
             hitstunTimer = ctx.payload.hitstunSeconds;
             currentState = PlayerState.Hitstun;
             moveKeysLocked = false;
+            movement.SetHorizontalControlEnabled(true);
+            horizontalControlWasEnabled = true;
             if (facingLockedDuringAction)
             {
                 movement.UnlockFacing();
@@ -212,6 +228,18 @@ public class PlayerCombatController : MonoBehaviour
         if (!actionRunner.IsPlaying || actionRunner.CurrentVariant == null || !actionRunner.BeforeRecoveryPhase)
         {
             moveKeysLocked = false;
+            if (!horizontalControlWasEnabled)
+            {
+                movement.SetHorizontalControlEnabled(true);
+                horizontalControlWasEnabled = true;
+            }
         }
+
+        if (moveWasLockedPrev && !moveKeysLocked)
+        {
+            movement.SetMoveInput(lastMoveInput.x);
+        }
+
+        moveWasLockedPrev = moveKeysLocked;
     }
 }

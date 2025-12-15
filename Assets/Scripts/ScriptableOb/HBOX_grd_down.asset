@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8bb5dc1232d3aa942afefef767e5336b, type: 3}
-  m_Name: HitboxUp
+  m_Name: HBOX_grd_down
   m_EditorClassIdentifier: 
   hitboxPrefab: {fileID: 5345622622785483517, guid: 5fc56e63652189144bac92cd6790651c, type: 3}
   payload:
-    damage: 8
+    damage: 10
     hitstunSeconds: 0.35
     armorBreak: 2
-    knockback: {x: 0, y: 20}
+    knockback: {x: 0, y: 15}
     resetVerticalVelocity: 1
     inheritSourceVerticalVelocity: 0
     ignoreIFrames: 0

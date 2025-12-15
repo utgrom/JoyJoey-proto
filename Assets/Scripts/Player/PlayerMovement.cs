@@ -64,6 +64,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isJumpingFromWall = false;
     private bool isFacingRight = true;
     private bool facingLocked = false;
+    private bool horizontalControlEnabled = true;
 
     private void Awake()
     {
@@ -188,6 +189,7 @@ public class PlayerMovement : MonoBehaviour
     private void HandleHorizontalMovement()
     {
         if (IsDashing) return;
+        if (!horizontalControlEnabled) return;
 
         // Flip direction
         if (!facingLocked && horizontalInput > 0 && !isFacingRight)
@@ -280,6 +282,11 @@ public class PlayerMovement : MonoBehaviour
     public void UnlockFacing()
     {
         facingLocked = false;
+    }
+
+    public void SetHorizontalControlEnabled(bool enabled)
+    {
+        horizontalControlEnabled = enabled;
     }
 
     private void HandleDashTimer()
